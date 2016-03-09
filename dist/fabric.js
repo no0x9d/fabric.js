@@ -23373,7 +23373,7 @@ fabric.util.object.extend(fabric.IText.prototype, /** @lends fabric.IText.protot
 
   fabric.util.getScript = function(url, callback) {
     request(url, '', function(body) {
-      eval(body);
+      // eval(body);
       callback && callback();
     });
   };
